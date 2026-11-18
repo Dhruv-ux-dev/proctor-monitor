@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: proctor-monitor
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    headers:
+      - path: /*.py
+        name: Content-Type
+        value: text/plain; charset=utf-8
